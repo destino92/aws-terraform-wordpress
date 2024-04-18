@@ -1,6 +1,4 @@
 #!/bin/bash
-#debug mode
-set -x  # Enable debug mode
 # Update package list
 sudo apt update
 
@@ -38,4 +36,12 @@ docker --version
 
 # Test Docker Compose installation
 docker-compose --version
-set +x  # Disable debug mode
+
+# create Dockerfiles
+# mkdir apache && nano Dockerfile
+# mkdir wordpress && nano Dockerfile 
+
+# touch docker-compose.yml with RDS INFO
+
+# launch
+# docker-compose up -d
