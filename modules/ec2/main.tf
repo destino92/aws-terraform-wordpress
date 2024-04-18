@@ -6,6 +6,7 @@ resource "aws_instance" "wordpress" {
   subnet_id                   = var.subnet_id
   security_groups             = var.security_groups
   associate_public_ip_address = true
+  user_data                   = file("script/ec2docker.sh")
 
   tags = {
     Name = "wp_ec2_destino"
